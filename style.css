@@ -1,0 +1,81 @@
+
+
+
+body{
+    margin: 0;
+}
+
+.flex-container{
+    display: flex;
+    width: auto;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid white;
+    gap: 50px;
+    background-image: linear-gradient(to top right,rgb(7, 2, 68),rgb(80, 80, 209));
+}
+
+.header{
+    
+    color: white;
+    flex: 1;
+    font-size: 40px;
+    
+    
+    
+}
+
+.banner-box{
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+    
+}
+.banner-box li{
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    color: white;
+    flex: 1;   
+}
+.banner-box li:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    
+}
+
+.banner-box li:hover:after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.main{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(7, 2, 68);
+
+}
+.about{
+    flex: 1;
+    
+}
+.about h1{
+    color: white;
+    font-size: 100px;
+}
+.shia-pic{
+    flex: 1;
+}
